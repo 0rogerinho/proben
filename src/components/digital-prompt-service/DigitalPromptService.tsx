@@ -1,36 +1,38 @@
 /* eslint-disable @next/next/no-img-element */
 // React
 import React from 'react';
+// React icons
+import { FaComputer } from 'react-icons/fa6';
+import { FiClock } from 'react-icons/fi';
 // Layout
 import { BaseLayout } from '@/layout';
+
 const dataCardGraphic = [
   {
     id: 1,
-    icon: '/icon/graphic51.svg',
+    icon: <FaComputer />,
     content:
       'Dos pacientes que buscam o Pronto-Socorro poderiam resolver sua situação de saúde por Telemedicina',
   },
   {
     id: 2,
-    icon: '/icon/graphic80.svg',
+    icon: <FiClock />,
     content:
       'Dos pacientes buscam o Pronto-Socorro ou um especialista como primeira opção quando precisam de atendimento médico',
   },
 ];
 
 interface CardGraphicProps {
-  icon: string;
+  icon: React.ReactNode;
   content: string;
 }
 
 const CardGraphic = ({ content, icon }: CardGraphicProps) => {
   return (
     <div className="flex items-center text-start text-white font-semibold text-[.625rem] gap-4 w-[250px] min-[375px]:w-[300px] lg:w-[280px] desktop:w-[400px] desktop:text-sm">
-      <img
-        className="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] lg:w-[50px] lg:h-[50px] desktop:w-[60px] desktop:h-[60px]"
-        src={icon}
-        alt=""
-      />
+      <div className="bg-gradient-to-t from-dark-blue to-light-blue rounded-full p-2 m-auto flex justify-center items-center text-2xl sm:text-3xl">
+        {icon}
+      </div>
       <p>{content}</p>
     </div>
   );
@@ -49,20 +51,20 @@ export const DigitalPromptService = () => {
           complexidade, com:
         </p>
 
-        <ul className="list-disc text-dark-orange text-start w-fit m-auto sm:mx-4">
+        <ul className="list-disc text-dark-orange text-start w-fit m-auto sm:mx-4 lg:pb-12">
           <li>CLÍNICOS GERAIS</li>
           <li>PEDIATRAS</li>
           <li>MÉDICOS DE FAMÍLIA</li>
         </ul>
 
-        <div className="relative w-[320px] -ml-4 min-[375px]:-ml-4 min-[375px]:w-[375px] sm:-ml-5 sm:w-[400px] lg:-ml-7 lg:w-[470px]">
+        <div className="relative w-[320px] -ml-4 min-[375px]:-ml-4 min-[375px]:w-[375px] min-[375px]:pb-12 sm:-ml-5 sm:w-[400px] lg:-ml-7 lg:w-[470px]">
           <img
             className="absolute desktop:w-[500px] desktop:h-[300px] lg:-top-12"
             src="/bg/bgArrowOrange.svg"
             alt="Arrow"
           />
 
-          <div className="relative z-10 space-y-4 pt-2 pl-4 min-[375px]:pt-5 sm:pt-4 desktop:pt-8">
+          <div className="relative z-10 space-y-4 pt-2 pl-4 min-[375px]:pt-6 sm:pt-8 lg:pt-0 desktop:pt-8">
             {dataCardGraphic.map(({ id, ...data }) => (
               <CardGraphic key={id} {...data} />
             ))}
