@@ -66,8 +66,8 @@ const Icon = ({ className, icon, alt, left }: IIcon) => {
 
 export const MarketLeader = () => {
   return (
-    <BaseLayout className="mt-14 relative h-[1500px] sm:w-[569px] sm:m-auto md:mt-16 md:space-y-12 lg:w-[1024px] m-auto lg:h-[500px]">
-      <div className="font-extrabold text-dark-blue text-center md:font-bold">
+    <BaseLayout className="mt-10 relative h-[1200px] sm:w-[569px] sm:m-auto md:mt-16 lg:w-[1024px] m-auto lg:h-[500px]">
+      <div className="font-extrabold text-dark-blue text-center mt-2 md:font-bold sm:-mt-10">
         <h3 className="text-sm md:text-2xl">PLATAFORMAS ROBUSTAS</h3>
         <h3 className="text-2xl md:text-[2.5rem]">LÍDERES DE MERCADO</h3>
       </div>

@@ -58,7 +58,7 @@ const Card = ({ content, title }: CardProps) => {
 
 export const PromptService = () => {
   return (
-    <BaseLayout className="mt-14 py-12 space-y-12 relative desktop:px-12 lg:items-center justify-center">
+    <BaseLayout className="mt-0 py-12 space-y-12 relative desktop:px-12 lg:items-center justify-center">
       <h1 className="text-dark-blue text-xl font-bold text-center sm:text-[2.5rem] sm:leading-[50px] lg:w-[650px] lg:text-4xl desktop:text-5xl">
         Atendimento 100% digital ou Jornada Híbrida?
       </h1>
