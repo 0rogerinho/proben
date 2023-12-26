@@ -48,7 +48,7 @@ const data = [
 
 export const CallToAction = () => {
   return (
-    <BaseLayout className="text-white text-center mt-4 relative overflow-hidden sm:text-start sm:mt-16 space-y-8 desktop:flex-row justify-between desktop:mt-20">
+    <BaseLayout className="text-white text-center mt-4 relative overflow-hidden sm:text-start sm:mt-16 space-y-8 desktop:flex-row justify-between desktop:mt-14">
       <div className="sm:w-[452px] space-y-5">
         <h2 className="text-3xl font-bold sm:text-4xl">Telelaudo</h2>
         <p className="">
@@ -91,10 +91,17 @@ export const CallToAction = () => {
         action=""
         className="w-full md:w-[550px] lg:w-[637px] desktop:w-[500px] bg-[#3551FF] rounded-3xl bg-opacity-50 m-auto desktop:m-0 p-4 text-start sm:p-8"
       >
-        <Input type="text" title="Nome Completo" className="text-black" />
+        <div className="flex flex-col gap-0 sm:flex-row sm:gap-4">
+          <Input type="text" title="Nome Completo" className="text-black" />
+          <Input type="text" title="CPF" className="text-black" />
+        </div>
+        <div className="flex flex-col gap-0 sm:flex-row sm:gap-4">
+          <Input type="text" title="RG" className="text-black" />
+          <Input type="text" title="Telefone" className="text-black" />
+        </div>
+        <Input type="text" title="Data de nascimento" className="text-black" />
         <Input type="text" title="Email" className="text-black" />
-        <Input type="text" title="Telefone" className="text-black" />
-        <Input type="text" title="Emails" className="text-black" />
+        <Input type="text" title="Endereço" className="text-black" />
         <button className="w-full bg-[#0054FF] rounded-lg flex justify-center items-center h-[40px] sm:h-[50px] mt-4">
           Enviar
         </button>
