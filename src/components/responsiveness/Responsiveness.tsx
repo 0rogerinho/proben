@@ -4,7 +4,7 @@ import React from 'react';
 
 export const Responsiveness = () => {
   return (
-    <div className="">
+    <div className="w-full m-auto">
       {/* Mobile */}
       <img
         className="w-full absolute -z-50 sm:hidden  min-h-[1600px] min-[380px]:max-h-[1500px] "
@@ -25,7 +25,7 @@ export const Responsiveness = () => {
       />
       {/* Desktop */}
       <img
-        className="w-full absolute -z-50 hidden desktop:block min-h-[1000px]"
+        className="w-full absolute -z-50 hidden m-auto inset-x-0 top-0 desktop:block min-h-[1000px] max-w-[1440px] "
         src="/bg/bgDesktop.png"
         alt="bgMobile"
       />

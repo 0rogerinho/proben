@@ -48,20 +48,22 @@ const Card = ({ content, title }: CardProps) => {
 
 export const DigitalService = () => {
   return (
-    <BaseLayout className="bg-gradient-to-l from-light-blue to-dark-blue mt-14 py-12 space-y-12 relative desktop:px-12">
-      <h1 className="text-dark-orange text-xl font-bold text-center sm:text-[2.5rem] sm:leading-[50px] lg:w-[650px] lg:text-4xl lg:text-start desktop:text-5xl">
-        Atendimento 100% digital ou Jornada Híbrida?
-      </h1>
-      <div className="grid grid-rows-4 grid-flow-col gap-4 justify-center sm:grid-rows-2 sm:gap-20 lg:justify-start lg:gap-10">
-        {data.map(({ id, ...data }) => (
-          <Card key={id} {...data} />
-        ))}
-      </div>
-      <img
-        className="absolute hidden lg:block w-[500px] -right-12 bottom-0 desktop:w-[654px]"
-        src="/mockup/doctor1.png"
-        alt="doctor_image"
-      />
-    </BaseLayout>
+    <div className="w-full bg-gradient-to-l from-light-blue to-dark-blue">
+      <BaseLayout className="mt-14 py-12 space-y-12 relative desktop:px-12 desktop:py-24">
+        <h1 className="text-dark-orange text-xl font-bold text-center sm:text-[2.5rem] sm:leading-[50px] lg:w-[650px] lg:text-4xl lg:text-start desktop:text-5xl">
+          Atendimento 100% digital ou Jornada Híbrida?
+        </h1>
+        <div className="grid grid-rows-4 grid-flow-col gap-4 justify-center sm:grid-rows-2 sm:gap-20 lg:justify-start lg:gap-10">
+          {data.map(({ id, ...data }) => (
+            <Card key={id} {...data} />
+          ))}
+        </div>
+        <img
+          className="absolute hidden lg:block w-[500px] -right-12 bottom-0 desktop:w-[654px]"
+          src="/mockup/doctor1.png"
+          alt="doctor_image"
+        />
+      </BaseLayout>
+    </div>
   );
 };

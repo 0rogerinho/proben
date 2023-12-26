@@ -8,7 +8,7 @@ const config: Config = {
     extend: {
       screens: {
         tablet: '850px',
-        desktop: '1200px'
+        desktop: '1280px'
       },
       colors:{
         "light-blue": '#171E88',

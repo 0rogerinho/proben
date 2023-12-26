@@ -14,7 +14,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative overflow-hidden max-w-[1440px] m-auto">
+    <main className="relative overflow-hidden">
       <Responsiveness />
       <Header />
       <CallToAction />

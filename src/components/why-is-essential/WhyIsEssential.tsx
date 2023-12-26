@@ -21,24 +21,24 @@ const dataCard = [
   },
   {
     id: 3,
+    icone: '/icon/doctor.svg',
+    title: 'AMPLIA O ACESSO ÀS ESPECIALIDADES MÉDICAS',
+    content:
+      'Supre a necessidade de especialidades médicas escassas em várias regiões do país.',
+  },
+  {
+    id: 4,
     icone: '/icon/money.svg',
     title: 'EQUILÍBRIO PARA O ORÇAMENTO PÚBLICO',
     content:
       'Perfeita para casos de baixa complexidade, diminui-se a sinistralidade das unidades de média e alta complexidade e melhora o uso dos recursos em saúde, mantendo um atendimento humanizado e com qualidade de vida',
   },
   {
-    id: 4,
+    id: 5,
     icone: '/icon/people.svg',
     title: 'REDUZ AS FILAS DE ATENDIMENTO EM UBS E UPAs',
     content:
       'A UBS equipada com telemedicina realiza um filtro muito mais eficiente de pacientes desafogando as unidades de média e alta complexidade como as UPAs e Hospitais Públicos, reduzindo, também, o custo assistencial para o SUS',
-  },
-  {
-    id: 5,
-    icone: '/icon/doctor.svg',
-    title: 'AMPLIA O ACESSO ÀS ESPECIALIDADES MÉDICAS',
-    content:
-      'Supre a necessidade de especialidades médicas escassas em várias regiões do país.',
   },
 ];
 
@@ -97,23 +97,23 @@ const CardGraphic = ({ content, icon }: CardGraphicProps) => {
 
 export const WhyIsEssential = () => {
   return (
-    <BaseLayout className="relative mt-64 text-center space-y-20 min-[375px]:mt-56 overflow-hidden min-[840px]:mt-[250px] desktop:mt-[350px]">
+    <BaseLayout className="relative mt-64 text-center space-y-20 min-[375px]:mt-56 overflow-hidden min-[840px]:mt-[400px] lg:mt-60 desktop:mt-[350px]">
       <h2 className="text-2xl font-bold text-dark-blue sm:text-[2.5rem] sm:w-[600px] m-auto leading-10">
         Por que a Telemedicina é essencial?
       </h2>
-      <div className="w-full mt-11 grid grid-rows-5 grid-flow-col justify-between sm:grid-rows-3 lg:grid-rows-2 gap-10 pb-28 min-[375px]:pb-36 min-[380px]:pb-60">
+      <div className="w-full grid grid-rows-5 grid-flow-col justify-between gap-10 pb-60 min-[375px]:pb-70 min-[380px]:pb-80 sm:pb-0 sm:grid-rows-3 lg:pb-[130px] lg:grid-rows-2 desktop:pb-[300px] desktop:justify-around">
         {dataCard.map(({ id, ...data }) => (
           <Card key={id} {...data} />
         ))}
       </div>
 
       <img
-        className="absolute bottom-0 sm:right-0 sm:bottom-60 sm:w-[380px] lg:w-[340px] desktop:w-[450px] desktop:h-[340px]"
+        className="absolute bottom-0 sm:right-0 sm:bottom-10 sm:w-[380px] lg:bottom-36 lg:w-[340px] desktop:bottom-72 desktop:w-[450px] desktop:h-[340px]"
         src="/icon/arrow.png"
         alt="Arrow"
       />
 
-      <div className="absolute mx-14 space-y-4 bottom-0 min-[375px]:bottom-8 min-[380px]:bottom-12 sm:-right-10 sm:bottom-[270px] lg:-right-12 desktop:bottom-[310px]">
+      <div className="absolute mx-14 space-y-4 bottom-2 min-[375px]:bottom-8 min-[380px]:bottom-12 sm:-right-10 sm:bottom-[80px] lg:bottom-[170px] lg:-right-12 desktop:bottom-[350px]">
         {dataCardGraphic.map(({ id, ...data }) => (
           <CardGraphic key={id} {...data} />
         ))}
