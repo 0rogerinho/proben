@@ -1,37 +1,29 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Proben Front-end
 
-## Getting Started
+Bem-vindo ao front-end do projeto Proben! Este repositório contém o código fonte e os recursos relacionados à interface do usuário do projeto.
 
-First, run the development server:
+## Tecnologias Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+O front-end do projeto Proben foi desenvolvido utilizando as seguintes tecnologias e ferramentas:
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Next.js:** Um framework React com suporte a TypeScript. O Next.js facilita a construção de aplicações React escaláveis e otimizadas para produção.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **TypeScript:** Um superset de JavaScript que adiciona tipagem estática à linguagem. O TypeScript melhora a manutenção do código e fornece autocompletar durante o desenvolvimento.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- **Tailwind CSS:** Um framework de utilitários CSS. O Tailwind CSS simplifica a estilização da aplicação com a abordagem utility-first, proporcionando flexibilidade e facilidade na criação de estilos customizados.
 
-## Learn More
+## Estrutura do Projeto
 
-To learn more about Next.js, take a look at the following resources:
+A estrutura do projeto está organizada da seguinte forma:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+  - **public/:** Contém arquivos estáticos, como imagens e ícones...
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# proben
+  - **src/:** Contém o código-fonte da aplicação.
+    - **APP/:**
+      - **globals.css/:** Estilos globais e estilização utilizando Tailwind CSS 
+      - **icon.ico/:**  Favicon do site
+      - **Layout.tsx/:** Componentes que representam seções inteiras da aplicação.
+    - **components/:** Componentes React reutilizáveis.
+    - **forms/:** Componentes reutilizaveis, como input, select...
+    - **layout/:** Componentes responsavel pela maior parte dos espaçamenos que garante uma boa responsividade.
+    - **libs/:** Utilitários e funções auxiliares.
