@@ -26,36 +26,37 @@ const data = [
   },
   {
     id: '5',
-    text: 'Integração com os laudos das clínicas para ajudar hospitais da rede',
+    text: 'Telelaudo - Diagnóstico e apoio a conduta da emergência cardiovascular, feito remotamente',
   },
   {
     id: '6',
-    text: 'Redução de custo médico e despesas operacionais',
+    text: 'Integração com os laudos das clínicas para ajudar hospitais da rede',
   },
   {
     id: '7',
-    text: 'Eficiência e padronização no tempo de entrega dos laudos',
+    text: 'Redução de custo médico e despesas operacionais',
   },
   {
     id: '8',
-    text: 'Dados de pacientes integrados e estruturados + dashboards de acompanhamento',
+    text: 'Eficiência e padronização no tempo de entrega dos laudos',
   },
   {
     id: '9',
+    text: 'Dados de pacientes integrados e estruturados + dashboards de acompanhamento',
+  },
+  {
+    id: '10',
     text: 'Segurança de dados com base nas diretrizes da LGPD',
   },
 ];
 
 export const CallToAction = () => {
   return (
-    <BaseLayout className="text-white text-center mt-4 relative overflow-hidden sm:text-start sm:mt-16 space-y-8 desktop:flex-row justify-between desktop:mt-14">
+    <BaseLayout className="text-white text-center mt-4 relative overflow-hidden sm:text-start sm:mt-16 gap-8 desktop:flex-row justify-between desktop:mt-14">
       <div className="sm:w-[452px] space-y-5">
-        <h2 className="text-3xl font-bold sm:text-4xl">Telelaudo</h2>
-        <p className="">
-          Diagnóstico e apoio a conduta da emergência cardiovascular, feito
-          remotamente
-        </p>
-
+        <h2 className="text-3xl text-white pt-4 font-bold sm:text-4xl m-auto">
+          Telelaudo
+        </h2>
         <div className="text-light-orange text-sm space-y-3 pt-52 min-[375px]:pt-80  min-[375px]:pb-14 sm:pb-16 sm:text-start sm:pt-0 sm:w-[452px] font-medium">
           {data.map(({ id, text }) => {
             return (
