@@ -57,7 +57,7 @@ export const CallToAction = () => {
         <h2 className="text-3xl text-white pt-4 font-bold sm:text-4xl m-auto">
           Telelaudo
         </h2>
-        <div className="text-light-orange text-sm space-y-3 pt-52 min-[375px]:pt-80  min-[375px]:pb-14 sm:pb-16 sm:text-start sm:pt-0 sm:w-[452px] font-medium">
+        <div className="text-light-orange text-sm space-y-3 pt-60 min-[375px]:pt-80  min-[375px]:pb-14 sm:pb-16 sm:text-start sm:pt-0 sm:w-[452px] font-medium">
           {data.map(({ id, text }) => {
             return (
               <div className="flex" key={id}>
@@ -93,15 +93,24 @@ export const CallToAction = () => {
         className="w-full md:w-[550px] lg:w-[637px] desktop:w-[500px] bg-[#3551FF] rounded-3xl bg-opacity-50 m-auto desktop:m-0 p-4 text-start sm:p-8"
       >
         <div className="flex flex-col gap-0 sm:flex-row sm:gap-4">
-          <Input type="text" title="Nome Completo" className="text-black" />
-          <Input type="text" title="CPF" className="text-black" />
+          <Input
+            type="text"
+            title="Nome Completo"
+            className="text-black"
+            placeholder="nome"
+          />
+          <Input
+            type="number"
+            title="CPF"
+            className="text-black appearance-none"
+          />
         </div>
         <div className="flex flex-col gap-0 sm:flex-row sm:gap-4">
-          <Input type="text" title="RG" className="text-black" />
-          <Input type="text" title="Telefone" className="text-black" />
+          <Input type="number" title="RG" className="text-black" />
+          <Input type="number" title="Telefone" className="text-black" />
         </div>
-        <Input type="text" title="Data de nascimento" className="text-black" />
-        <Input type="text" title="Email" className="text-black" />
+        <Input type="date" title="Data de nascimento" className="text-black" />
+        <Input type="email" title="Email" className="text-black" />
         <Input type="text" title="Endereço" className="text-black" />
         <button className="w-full bg-[#0054FF] rounded-lg flex justify-center items-center h-[40px] sm:h-[50px] mt-4">
           Enviar

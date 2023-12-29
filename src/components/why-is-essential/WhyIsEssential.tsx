@@ -97,7 +97,7 @@ const CardGraphic = ({ content, icon }: CardGraphicProps) => {
 
 export const WhyIsEssential = () => {
   return (
-    <BaseLayout className="relative mt-64 text-center space-y-20 min-[375px]:mt-56 overflow-hidden min-[840px]:mt-[400px] lg:mt-60 desktop:mt-[350px]">
+    <BaseLayout className="relative mt-64 text-center space-y-20 min-[375px]:mt-56 overflow-hidden min-[840px]:mt-[400px] lg:mt-60 desktop:mt-[450px]">
       <h2 className="text-2xl font-bold text-dark-blue sm:text-[2.5rem] sm:w-[600px] m-auto leading-10">
         Por que a Telemedicina é essencial?
       </h2>
